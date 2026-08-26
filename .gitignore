@@ -1,0 +1,19 @@
+# Build output
+bin/
+obj/
+*.pdb
+*.suo
+*.user
+*.cache
+
+# Visual Studio
+.vs/
+*.sln.docstates
+
+# Local runtime settings generated next to the DLL
+PmxMcpPlugin.json
+*.log
+
+# OS
+Thumbs.db
+desktop.ini

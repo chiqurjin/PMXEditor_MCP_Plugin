@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Visual Studio / MSBuild build.
+    PEPlugin.dll and SlimDX.dll are NOT redistributed: they are referenced from your own
+    PMX Editor install. Point PmxEditorPath at that folder, either by setting the
+    PMXEDITOR_PATH environment variable or by passing /p:PmxEditorPath=... to msbuild.
+
+    build.ps1 in the repository root does the same thing without Visual Studio.
+  -->
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>PmxMcpPlugin</AssemblyName>
+    <RootNamespace>PmxMcp</RootNamespace>
+    <OutputType>Library</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>5</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <Deterministic>true</Deterministic>
+    <PmxEditorPath Condition=" '$(PmxEditorPath)' == '' ">$(PMXEDITOR_PATH)</PmxEditorPath>
+  </PropertyGroup>
+
+  <Target Name="CheckPmxEditorPath" BeforeTargets="BeforeBuild">
+    <Error Condition=" '$(PmxEditorPath)' == '' "
+           Text="PmxEditorPath is not set. Set the PMXEDITOR_PATH environment variable to your PMX Editor folder, or pass /p:PmxEditorPath=C:\PmxEditor." />
+    <Error Condition="!Exists('$(PmxEditorPath)\Lib\PEPlugin\PEPlugin.dll')"
+           Text="PEPlugin.dll was not found under $(PmxEditorPath)\Lib\PEPlugin. Check PmxEditorPath." />
+  </Target>
+
+  <ItemGroup>
+    <Reference Include="PEPlugin">
+      <HintPath>$(PmxEditorPath)\Lib\PEPlugin\PEPlugin.dll</HintPath>
+      <Private>false</Private>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="SlimDX">
+      <HintPath>$(PmxEditorPath)\Lib\SlimDX\x64\SlimDX.dll</HintPath>
+      <Private>false</Private>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Web.Extensions" />
+  </ItemGroup>
+
+</Project>
