@@ -176,8 +176,11 @@ Visual Studio / MSBuild を使う場合は `src\PmxMcpPlugin\PmxMcpPlugin.csproj
   (`PEPlugin.dll`, `SlimDX.dll`, `PmxEditor.exe` など) は一切含みません。
 - **MCP (Model Context Protocol)**: <https://modelcontextprotocol.io/>
 
-本プラグインは非公式であり、PMX エディタ作者様とは無関係です。
+本プラグインは非公式であり、PMX エディタ作者様とは無関係です。**本プラグインに関する問い合わせを
+PMX エディタ作者様に行わないでください。** 不具合や要望はこのリポジトリの Issue へお願いします。
 モデルデータの破損に備えて、作業前のバックアップを推奨します。
+
+詳細は [NOTICE](NOTICE) を参照してください。
 
 ## ライセンス
 

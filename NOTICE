@@ -1,0 +1,39 @@
+NOTICE / クレジットと再配布について
+====================================
+
+PMX Editor is the work of 極北P (kkhk22).
+PMXエディタは 極北P (kkhk22) 様の著作物です。
+
+This project (PMXEditor_MCP_Plugin) is an UNOFFICIAL plugin for PMX Editor and
+is not affiliated with, endorsed by, or supported by the author of PMX Editor.
+本プロジェクトは PMXエディタ向けの非公式プラグインであり、PMXエディタ作者様とは
+関係ありません。作者様への問い合わせはご遠慮ください。
+
+NOT REDISTRIBUTED HERE / 同梱していないもの
+-------------------------------------------
+
+This repository contains ONLY the plugin source and its build output
+(PmxMcpPlugin.dll). The following belong to the author of PMX Editor and are
+NOT included and NOT redistributed here. They are referenced from your own
+PMX Editor installation at build time and at run time:
+
+本リポジトリに含まれるのはプラグインのソースとそのビルド成果物
+(PmxMcpPlugin.dll) のみです。以下は PMXエディタ作者様の著作物であり、同梱も
+再配布もしていません。ビルド時・実行時に、利用者自身の PMXエディタから参照します。
+
+  - PmxEditor.exe / PmxEditor_x64.exe
+  - PEPlugin.dll
+  - PmxEditorCore.dll / PmxEditorLib.dll / PmxLib.dll / VmdViewLib.dll
+  - SlimDX.dll (SlimDX Group)
+  - その他 PMXエディタ配布物に含まれるファイル一式
+
+LICENSE OF THIS PROJECT / 本プロジェクトのライセンス
+----------------------------------------------------
+
+MIT License. See the LICENSE file.
+MIT ライセンスです。LICENSE ファイルを参照してください。
+
+REFERENCES / 参照
+-----------------
+
+  - Model Context Protocol: https://modelcontextprotocol.io/
