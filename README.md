@@ -18,6 +18,9 @@ Claude Code  ──HTTP/JSON-RPC──►  PmxMcpPlugin.dll  ──PEPlugin API�
 
 ## インストール
 
+> **はじめての方へ:** 図解つきの [かんたん導入マニュアル (PDF・全9ページ)](docs/INSTALL-MANUAL-ja.pdf) を用意しました。
+> 手順だけを知りたい場合はそちらが早いです。
+
 1. [dist/PmxMcpPlugin.dll](dist/PmxMcpPlugin.dll) をダウンロードして、PMX エディタの `_plugin\User\` フォルダへコピーします。
 2. **PmxEditor_x64.exe** を起動します (プラグインは AnyCPU ですが、64bit 版を推奨)。
    起動と同時に MCP サーバーが立ち上がり、`PmxMcpPlugin.json` が同じフォルダに自動生成されます。
