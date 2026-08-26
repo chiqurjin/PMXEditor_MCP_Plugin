@@ -22,6 +22,14 @@ SOFTWARE.
 
 ---
 
+CREDIT / クレジット
+
+PMX Editor is the work of 極北P (kkhk22). This project is an UNOFFICIAL plugin
+for it and is not affiliated with the author of PMX Editor.
+
+PMXエディタは 極北P (kkhk22) 様の著作物です。本プロジェクトは非公式のプラグインであり、
+PMXエディタ作者様とは関係ありません。
+
 This repository contains ONLY the plugin source and its build output.
 PMX Editor itself and its libraries (PmxEditor.exe, PEPlugin.dll, SlimDX.dll,
 PmxEditorCore.dll and others) are NOT included and are NOT redistributed here.
