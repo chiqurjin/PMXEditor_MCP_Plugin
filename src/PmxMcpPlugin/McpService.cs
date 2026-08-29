@@ -35,6 +35,9 @@ namespace PmxMcp
             BoneTools.Register(m_registry, editor);
             MaterialTools.Register(m_registry, editor);
             MorphTools.Register(m_registry, editor);
+            VertexTools.Register(m_registry, editor);
+            NodeTools.Register(m_registry, editor);
+            PhysicsTools.Register(m_registry, editor);
             SelectionTools.Register(m_registry, editor);
             FileTools.Register(m_registry, editor);
             ViewTools.Register(m_registry, editor);

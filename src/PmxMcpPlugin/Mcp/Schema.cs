@@ -56,6 +56,42 @@ namespace PmxMcp
             return s;
         }
 
+        /// <summary>A value whose shape is described in words rather than by a type.</summary>
+        public static Dictionary<string, object> Any(string description)
+        {
+            return Json.Obj("description", description);
+        }
+
+        public static Dictionary<string, object> BoolArray(string description, int length)
+        {
+            Dictionary<string, object> s = Json.Obj(
+                "type", "array",
+                "items", Json.Obj("type", "boolean"),
+                "description", description);
+            if (length > 0)
+            {
+                s["minItems"] = length;
+                s["maxItems"] = length;
+            }
+            return s;
+        }
+
+        public static Dictionary<string, object> StrArray(string description)
+        {
+            return Json.Obj(
+                "type", "array",
+                "items", Json.Obj("type", "string"),
+                "description", description);
+        }
+
+        public static Dictionary<string, object> ObjArray(string description)
+        {
+            return Json.Obj(
+                "type", "array",
+                "items", Json.Obj("type", "object"),
+                "description", description);
+        }
+
         public static Dictionary<string, object> IntArray(string description)
         {
             return Json.Obj(

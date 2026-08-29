@@ -17,3 +17,7 @@ PmxMcpPlugin.json
 # OS
 Thumbs.db
 desktop.ini
+
+# Python
+__pycache__/
+*.pyc
