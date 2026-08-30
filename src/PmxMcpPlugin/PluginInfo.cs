@@ -5,7 +5,7 @@ namespace PmxMcp
     {
         public const string ServerName = "pmx-editor";
         public const string DisplayName = "PMX Editor MCP Plugin";
-        public const string Version = "0.1.0";
+        public const string Version = "0.2.0";
 
         /// <summary>MCP protocol revision this server implements.</summary>
         public const string ProtocolVersion = "2025-06-18";
